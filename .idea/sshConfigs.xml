@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="http://127.0.0.1" id="bfc1df06-bb58-4d35-931e-f34ba6f183fd" port="22" customName="http://127.0.01" nameFormat="CUSTOM">
+        <option name="customName" value="http://127.0.01" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" id="c303d1b9-cd12-45b3-ad6f-8eb281480706" customName="172.17.0.1" nameFormat="CUSTOM">
+        <option name="customName" value="172.17.0.1" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>
