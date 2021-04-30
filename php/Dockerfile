@@ -41,7 +41,6 @@ RUN docker-php-ext-install \
 # Install Xdebug (but don't enable)
 RUN pecl install -o -f xdebug
 
-ENV PHP_MEMORY_LIMIT 3G
 ENV PHP_ENABLE_XDEBUG true
 ENV MAGENTO_ROOT /var/www/html
 

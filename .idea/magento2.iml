@@ -658,6 +658,9 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/polyfill-php56" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/symfony/polyfill-php70" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/src/dev/tests/static/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/src/update/vendor" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
