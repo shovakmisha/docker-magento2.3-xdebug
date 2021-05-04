@@ -4,7 +4,7 @@ return [
         'frontName' => 'admin'
     ],
     'crypt' => [
-        'key' => 'fc5b87a58a276cd99912b0fd562f0495'
+        'key' => 'cbacc649ddfcf5762efc7e64da3f731f'
     ],
     'db' => [
         'table_prefix' => '',
@@ -14,9 +14,6 @@ return [
                 'dbname' => 'magento2',
                 'username' => 'root',
                 'password' => 'root',
-                'model' => 'mysql4',
-                'engine' => 'innodb',
-                'initStatements' => 'SET NAMES utf8;',
                 'active' => '1'
             ]
         ]
@@ -59,6 +56,6 @@ return [
         'vertex' => 1
     ],
     'install' => [
-        'date' => 'Wed, 28 Apr 2021 19:09:37 +0000'
+        'date' => 'Sat, 01 May 2021 15:00:45 +0000'
     ]
 ];

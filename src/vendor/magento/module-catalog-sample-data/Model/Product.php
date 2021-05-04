@@ -103,7 +103,6 @@ class Product
         $this->eavConfig->clear();
         $this->setGalleryFixtures($galleryFixtures);
 
-        /** @var \Magento\Catalog\Model\Product $product */
         $product = $this->productFactory->create();
         foreach ($productFixtures as $fileName) {
             $fileName = $this->fixtureManager->getFixture($fileName);
@@ -139,10 +138,6 @@ class Product
                 }
 
                 $this->prepareProduct($product, $data);
-                $product->setData('custom_layout_update', null);
-                if ($product->hasData(\Magento\Catalog\Model\Product::CUSTOM_ATTRIBUTES)) {
-                    $product->setCustomAttribute('custom_layout_update', null);
-                }
 
                 $product->save();
                 $this->installGallery($product);

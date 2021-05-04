@@ -108,7 +108,7 @@ class Attribute
             foreach ($rows as $row) {
                 $data = [];
                 foreach ($row as $key => $value) {
-                    $data[$header[$key]] = trim($value);
+                    $data[$header[$key]] = $value;
                 }
                 $data['attribute_set'] = explode("\n", $data['attribute_set']);
 
@@ -179,7 +179,7 @@ class Attribute
             ->load();
         foreach ($data['option'] as $value) {
             if (!$options->getItemByColumnValue('value', $value)) {
-                $result[] = trim($value);
+                $result[] = $value;
             }
         }
         return $result ? $this->convertOption($result) : $result;

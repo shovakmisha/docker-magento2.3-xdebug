@@ -60,13 +60,11 @@ class Page
                 }
                 $row = $data;
 
-                /** @var \Magento\Cms\Model\Page $page */
-                $page = $this->pageFactory->create();
-                $page->load($row['identifier'], 'identifier');
-                $page->addData($row);
-                $page->setCustomLayoutUpdateXml(null);
-                $page->setStores([\Magento\Store\Model\Store::DEFAULT_STORE_ID]);
-                $page->save();
+                $this->pageFactory->create()
+                    ->load($row['identifier'], 'identifier')
+                    ->addData($row)
+                    ->setStores([\Magento\Store\Model\Store::DEFAULT_STORE_ID])
+                    ->save();
             }
         }
     }

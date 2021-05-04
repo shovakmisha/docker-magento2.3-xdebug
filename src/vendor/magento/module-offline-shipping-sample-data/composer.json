@@ -2,12 +2,10 @@
     "name": "magento/module-offline-shipping-sample-data",
     "description": "N/A",
     "require": {
-        "php": "~7.1.3||~7.2.0||~7.3.0",
-        "magento/framework": "102.0.*",
+        "php": "~7.1.3||~7.2.0",
+        "magento/module-sample-data": "100.3.*",
         "magento/module-offline-shipping": "100.3.*",
-        "magento/module-directory": "100.3.*",
-        "magento/module-config": "101.1.*",
-        "magento/module-store": "101.0.*"
+        "magento/module-directory": "100.3.*"
     },
     "type": "magento2-module",
     "license": [
@@ -22,5 +20,5 @@
             "Magento\\OfflineShippingSampleData\\": ""
         }
     },
-    "version": "100.3.4"
+    "version": "100.3.1"
 }

@@ -16,7 +16,7 @@ use Magento\ImportExport\Model\Import\ErrorProcessing\ProcessingErrorAggregatorI
 class Product
 {
     /**
-     * @var Import
+     * @var \Magento\ImportExport\Model\Import
      */
     private $importModel;
 
@@ -41,13 +41,8 @@ class Product
     private $componentRegistrar;
 
     /**
-     * @var \Magento\Eav\Model\Config
-     */
-    private $eavConfig;
-
-    /**
      * @param \Magento\Eav\Model\Config $eavConfig
-     * @param Import $importModel
+     * @param \Magento\ImportExport\Model\Import $importModel
      * @param \Magento\ImportExport\Model\Import\Source\CsvFactory $csvSourceFactory
      * @param \Magento\Indexer\Model\Indexer\CollectionFactory $indexerCollectionFactory
      * @param \Magento\Framework\Filesystem\Directory\ReadFactory $readFactory
@@ -55,7 +50,7 @@ class Product
      */
     public function __construct(
         \Magento\Eav\Model\Config $eavConfig,
-        Import $importModel,
+        \Magento\ImportExport\Model\Import $importModel,
         \Magento\ImportExport\Model\Import\Source\CsvFactory $csvSourceFactory,
         \Magento\Indexer\Model\Indexer\CollectionFactory $indexerCollectionFactory,
         \Magento\Framework\Filesystem\Directory\ReadFactory $readFactory,
@@ -75,7 +70,6 @@ class Product
     public function install()
     {
         $this->eavConfig->clear();
-        /** @var Import $importModel */
         $importModel = $this->importModel;
         $importModel->setData(
             [
