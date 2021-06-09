@@ -1,8 +1,18 @@
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
-    <referenceBlock name="content">
-        <block
-            template="content.phtml"
-            class="Mage2\Js\Block\Main"
-            name="mage2_js_name"/>
-    </referenceBlock>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="1column"
+      xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+
+    <!--head>
+        <script src="Mage2tv_Js/js/script-example.js" />
+    </head-->
+
+    <body>
+        <referenceBlock name="content">
+            <block
+                template="content.phtml"
+                class="Mage2tv\Js\Block\Main"
+                name="mage2_js_name"/>
+        </referenceBlock>
+    </body>
+
 </page>

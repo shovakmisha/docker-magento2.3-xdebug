@@ -1,0 +1,12 @@
+<?php
+
+$all_fish = $block->getFish();
+?>
+<h1 > Hello Fish !</h1 >
+<ul >
+    <?php foreach ( $all_fish as $fish ):?>
+        <li>
+            <?php echo $block->escapeHtml($fish); ?>
+        </li>
+    <?php endforeach ; ?>
+</ul >

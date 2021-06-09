@@ -4,7 +4,7 @@ return [
         'frontName' => 'admin'
     ],
     'crypt' => [
-        'key' => 'cbacc649ddfcf5762efc7e64da3f731f'
+        'key' => 'd62811ed4d672395143191123ebfeea6'
     ],
     'db' => [
         'table_prefix' => '',
@@ -56,6 +56,6 @@ return [
         'vertex' => 1
     ],
     'install' => [
-        'date' => 'Sat, 01 May 2021 15:00:45 +0000'
+        'date' => 'Mon, 31 May 2021 07:31:59 +0000'
     ]
 ];

@@ -1,0 +1,13 @@
+<page xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+      layout="1column"
+      xmlns:xsi="file:///../../../../../../../vendor/magento/framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block name="pulsestorm_nofrills_chapter3_text" class="Magento\Framework\View\Element\Text">
+                <arguments>
+                    <argument name="text" xsi:type="string">This is a test .</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page >

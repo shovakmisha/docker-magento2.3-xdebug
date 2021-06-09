@@ -1,5 +1,5 @@
 <?php
-namespace Mage2tv\Js\Block;
+namespace Mage2tv\Widjet\Block;
 use Magento\Framework\View\Element\Template;
 
 class Main extends Template

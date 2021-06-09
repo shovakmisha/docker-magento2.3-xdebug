@@ -10,6 +10,8 @@ return [
         'Magento_AdminNotification' => 1,
         'MSP_ReCaptcha' => 1,
         'Magento_Config' => 1,
+        'Mage2tv_Js' => 1,
+        'Mage2tv_Widjet' => 1,
         'Magento_Indexer' => 1,
         'Magento_AdvancedPricingImportExport' => 1,
         'Magento_Search' => 1,
@@ -223,7 +225,8 @@ return [
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
         'Magento_WishlistSampleData' => 1,
-        'Pulsestorm_TutorialObjectManager1' => 1,
+        'Pulsestorm_HelloWorldMVVM' => 1,
+        'Pulsestorm_Nofrillslayout' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1
     ]

@@ -1,6 +1,6 @@
 <?php
 
-    namespace Mage2tv\Js\Controller\Index;
+    namespace Mage2tv\Widjet\Controller\Index;
 
 use Magento\Framework\View\Result\PageFactory;
 use Magento\Framework\App\Action\Context;

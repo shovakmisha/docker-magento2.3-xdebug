@@ -1,0 +1,17 @@
+<page xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+        layout="1column">
+    <body>
+        <referenceContainer name="content">
+            <block
+                template="Pulsestorm_Nofrillslayout::chapter10/hello.phtml"
+                class="Magento\Framework\View\Element\Template"
+                name="pulsestorm_nofrillslayout_chapter10_hello"/>
+        </referenceContainer>
+        <referenceBlock name="pulsestorm_nofrillslayout_chapter10_hello">
+            <action method ="setTemplate">
+                <argument name="template" xsi:type="string">Pulsestorm_Nofrillslayout::chapter10/user/main.phtml</argument>
+            </action>
+        </referenceBlock>
+        <!-- END: add the following new nodes -->
+    </body>
+</page>

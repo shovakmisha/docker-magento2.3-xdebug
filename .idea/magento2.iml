@@ -661,6 +661,8 @@
       <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
       <excludeFolder url="file://$MODULE_DIR$/src/dev/tests/static/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/src/update/vendor" />
+      <excludeFolder url="file://$MODULE_DIR$/src/pub/static" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

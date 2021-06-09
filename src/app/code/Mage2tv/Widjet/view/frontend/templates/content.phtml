@@ -8,13 +8,15 @@ $url = $block->escapeJs($block->getBaseUrl());
 
 ?>
 
-<h1 data-mage-init='{ "coffee": {"base_url":"<?= $url ?>"} }'>Hello World</h1>
 
- <h2 data-mage-init='{"mage2tv-title": {}}'></h2>
-<!--script type="text/x-magento-init">
-    {
-        "*": {
-            "Mage2tv_Js/js/script-example": {"base_url":"<?= $url ?>"}
-        }
-    }
-</script-->
+<form action="" data-mage-init='{"validation": {}}'>
+    <div class="control">
+        <input type="text"
+               name="email"
+               id="email"
+               class="input-text"
+               placeholder="<?= __('your email') ?>"
+               data-validate="{required: true, 'validate-email': true}" />
+    </div>
+    <button type="submit" class="action primary"><?= __('Submit') ?></button>
+</form>

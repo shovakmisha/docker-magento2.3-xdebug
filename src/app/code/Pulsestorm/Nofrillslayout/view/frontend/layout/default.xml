@@ -1,0 +1,25 @@
+<page xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+      layout="empty">
+
+    <head>
+        <css src="Pulsestorm_Nofrillslayout::chapter-7/example.css"/>
+
+        <!-- START : our new node -->
+
+        <!-- END: our new node -->
+
+        <script src="Pulsestorm_Nofrillslayout::chapter-8/example-script.js"/>
+        <!-- alternate <link/> syntax for the same thing -->
+        <!-- <link src=" Pulsestorm_Nofrillslayout :: chapter-8/ example - script .js"/>
+        -->
+        <!-- ... -->
+    </head>
+
+    <body>
+        <referenceBlock name="head.additional">
+            <block template="Pulsestorm_Nofrillslayout::chapter-9/head.phtml"
+                   class="Pulsestorm\Nofrillslayout\Block\Head"
+                   name="pulsestorm_javascriptcssexample_block_head" />
+        </referenceBlock>
+    </body>
+</page>

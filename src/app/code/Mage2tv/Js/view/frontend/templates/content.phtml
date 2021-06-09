@@ -1,13 +1,20 @@
-<h1>Hello World</h1>
-
-<h1><?php echo $this->escapeHtml($this->getMessage()); ?></h1>
-
 <?php
-    echo $this->escapeHtml($this->getName());
+
+/**
+ * @var Mage2tv\Js\Block\Main $block
+ */
+
+$url = $block->escapeJs($block->getBaseUrl());
+
 ?>
 
-<h2><?php echo $this->escapeHtml($this->getGoodbyeMessage()); ?></h2>
+<h1 data-mage-init='{ "coffee": {"base_url":"<?= $url ?>"} }'>Hello World</h1>
 
-<?php
-    // phpinfo();
-?>
+ <h2 data-mage-init='{"mage2tv-title": {}}'></h2>
+<!--script type="text/x-magento-init">
+    {
+        "*": {
+            "Mage2tv_Js/js/script-example": {"base_url":"<?= $url ?>"}
+        }
+    }
+</script-->
