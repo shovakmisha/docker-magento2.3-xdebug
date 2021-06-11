@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @var Mage2tv\Widget\Block\Main $block
+ */
+
+$url = $block->escapeJs($block->getBaseUrl());
+
+?>
+
+
+<form action="" data-mage-init='{"validation": {}}'>
+    <div class="control">
+        <input type="text"
+               name="email"
+               id="email"
+               class="input-text"
+               placeholder="<?= __('your email') ?>"
+               data-validate="{required: true, 'validate-email': true}" />
+    </div>
+    <button type="submit" class="action primary"><?= __('Submit') ?></button>
+</form>
+
+<div id="my-collapsible" data-mage-init='{"collapsible": {"ajaxContent": true} }'>
+    <div data-role="title">
+        <h2>How about collapsible widget? <button data-role="trigger">go</button></h2>
+    </div>
+    <div id="example" data-role="content">
+        <a href="<?php echo $block->getViewFileUrl('Mage2tv_Widget/template.html') ?>" data-ajax="true"></a>
+    </div>
+</div>
+
+
+
+
+<div class="selector">
+    <p>Example jQuery UI Widget</p>
+</div>
+
+<script type="text/x-magento-init">
+    {
+        ".selector": {
+            "Magento_Theme/js/mywidget": {
+                "optionOne": "valueOne",
+                "optionTwo": "valueTwo"
+            }
+        }
+    }
+</script>

@@ -11,7 +11,7 @@ return [
         'MSP_ReCaptcha' => 1,
         'Magento_Config' => 1,
         'Mage2tv_Js' => 1,
-        'Mage2tv_Widjet' => 1,
+        'Mage2tv_Widget' => 1,
         'Magento_Indexer' => 1,
         'Magento_AdvancedPricingImportExport' => 1,
         'Magento_Search' => 1,
@@ -226,7 +226,9 @@ return [
         'Magento_WishlistGraphQl' => 1,
         'Magento_WishlistSampleData' => 1,
         'Pulsestorm_HelloWorldMVVM' => 1,
+        'Pulsestorm_Logdropdown' => 1,
         'Pulsestorm_Nofrillslayout' => 1,
+        'Pulsestorm_RequireJsRewrite' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1
     ]
