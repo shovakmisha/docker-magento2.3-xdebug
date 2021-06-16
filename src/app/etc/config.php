@@ -11,6 +11,9 @@ return [
         'MSP_ReCaptcha' => 1,
         'Magento_Config' => 1,
         'Mage2tv_Js' => 1,
+        'Mage2tv_UI' => 1,
+        'Mage2tv_UI2' => 1,
+        'Mage2tv_UI3' => 1,
         'Mage2tv_Widget' => 1,
         'Magento_Indexer' => 1,
         'Magento_AdvancedPricingImportExport' => 1,
@@ -229,6 +232,7 @@ return [
         'Pulsestorm_Logdropdown' => 1,
         'Pulsestorm_Nofrillslayout' => 1,
         'Pulsestorm_RequireJsRewrite' => 1,
+        'Pulsestorm_SimpleValidUiComponent' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1
     ]

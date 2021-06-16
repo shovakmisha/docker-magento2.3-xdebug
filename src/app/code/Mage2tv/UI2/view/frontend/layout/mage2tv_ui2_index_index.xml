@@ -1,0 +1,25 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="1column"
+      xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+
+    <body>
+        <referenceBlock name="content">
+            <block
+                template="nested-templates.phtml"
+                class="Mage2tv\UI2\Block\Main"
+                name="mage2_uijs2_name"/>
+
+            <block
+                template="display-area.phtml"
+                class="Mage2tv\UI2\Block\Main"
+                name="mage2_uijs2_name_display_area"/>
+
+            <block
+                template="display-area2.phtml"
+                class="Mage2tv\UI2\Block\Main"
+                name="mage2_uijs2_name_display_area2"/>
+
+        </referenceBlock>
+    </body>
+
+</page>

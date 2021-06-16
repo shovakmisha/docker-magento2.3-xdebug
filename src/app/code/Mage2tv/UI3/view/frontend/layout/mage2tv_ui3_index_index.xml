@@ -1,0 +1,20 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="1column"
+      xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+
+    <body>
+        <referenceBlock name="content">
+            <block
+                template="content.phtml"
+                class="Mage2tv\UI3\Block\Main"
+                name="mage2_uijs3_name"/>
+
+            <block
+                template="imports.phtml"
+                class="Mage2tv\UI3\Block\Main"
+                name="mage2_uijs3_name"/>
+
+        </referenceBlock>
+    </body>
+
+</page>
