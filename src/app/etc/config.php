@@ -14,6 +14,7 @@ return [
         'Mage2tv_UI' => 1,
         'Mage2tv_UI2' => 1,
         'Mage2tv_UI3' => 1,
+        'Mage2tv_UI3Links' => 1,
         'Mage2tv_Widget' => 1,
         'Magento_Indexer' => 1,
         'Magento_AdvancedPricingImportExport' => 1,
