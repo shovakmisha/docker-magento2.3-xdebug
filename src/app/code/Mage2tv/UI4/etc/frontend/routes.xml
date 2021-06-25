@@ -1,0 +1,7 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/App/etc/routes.xsd">
+    <router id="standard">
+        <route id="mage2tv_ui4" frontName="mage2tv_ui4">
+            <module name="Mage2tv_UI4" />
+        </route>
+    </router>
+</config>

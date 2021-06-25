@@ -1,0 +1,19 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="1column"
+      xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+
+    <body>
+        <referenceBlock name="content">
+            <block
+                template="js-container.phtml"
+                class="Mage2tv\UI4\Block\Main"
+                name="mage2_uijs4_name"/>
+
+            <block
+                template="state-managment.phtml"
+                class="Mage2tv\UI4\Block\Main"
+                name="mage2_uijs4_state_managment"/>
+        </referenceBlock>
+    </body>
+
+</page>
