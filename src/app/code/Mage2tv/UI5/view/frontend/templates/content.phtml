@@ -7,11 +7,14 @@
  $imageUrl = $block->getViewFileUrl('Mage2tv_UI5/images/img1.jpg');
 ?>
 
-<div scope="my-component">
-    <h1 data-mage-init='{"Mage2tv_UI5/js/plain/pixelbg" : {
+<div data-bind="scope: 'my-component'">
+    <!--h1 data-mage-init='{"Mage2tv_UI5/js/plain/pixelbg" : {
                             "src": "<?php echo $imageUrl ?>",
                             "pixelSize": 10
-    }}'>
+    }}'-->
+    <h1 data-bind="pixelbg: {src: '<?php echo $imageUrl ?>', pixelSize: 5}" style="min-height: 50px;"></h1>
+        lala land lala land lala land lala land lala land lala land
+        <br>
         lala land lala land lala land lala land lala land lala land
     </h1>
 </div>
@@ -22,8 +25,7 @@
             "Magento_Ui/js/core/app": {
                 "components": {
                     "my-component": {
-                        "component": "Mage2tv_UI4/js/viewmodel",
-                        "template": "Mage2tv_UI4/button"
+                        "component": "Mage2tv_UI5/js/viewmodel"
                     }
                 }
             }
