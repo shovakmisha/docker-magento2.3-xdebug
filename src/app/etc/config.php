@@ -237,6 +237,9 @@ return [
         'Pulsestorm_Nofrillslayout' => 1,
         'Pulsestorm_RequireJsRewrite' => 1,
         'Pulsestorm_SimpleValidUiComponent' => 1,
+        'Pulsestorm_TutorialObjectManager1' => 1,
+        'Pulsestorm_TutorialObjectManagerArguments' => 1,
+        'Pulsestorm_TutorialObjectPreference' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1
     ]
