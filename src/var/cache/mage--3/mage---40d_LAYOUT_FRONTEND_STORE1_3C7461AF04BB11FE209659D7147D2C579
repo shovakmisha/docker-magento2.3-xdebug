@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1620104657;s:6:"expire";i:9999999999;s:4:"tags";s:115:"40d_DEFAULT,40d_CMS_INDEX_INDEX,40d_CMS_PAGE_VIEW,40d_CMS_INDEX_INDEX_ID_HOME,40d_LAYOUT_GENERAL_CACHE_TAG,40d_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1626413826;s:6:"expire";i:9999999999;s:4:"tags";s:115:"40d_DEFAULT,40d_CMS_INDEX_INDEX,40d_CMS_PAGE_VIEW,40d_CMS_INDEX_INDEX_ID_HOME,40d_LAYOUT_GENERAL_CACHE_TAG,40d_MAGE";}
 <body>
    <referenceContainer name="header.panel">
       <block class="Magento\Directory\Block\Currency" name="currency" before="store_language" template="Magento_Directory::currency.phtml"/>
@@ -739,7 +739,7 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1620104657;s:6:"expire";i:9999999999;s:4:"t
 </body>
 <body>
    <referenceContainer name="cms_footer_links_container">
-      <block class="Magento\Cms\Block\Widget\Block" name="4Ei5YVYID6rhYJJ8HoEk06e8ffxE9WMO" template="widget/static_block/default.phtml">
+      <block class="Magento\Cms\Block\Widget\Block" name="E78fMxuDATVrgyJ7JuXDvOApAEptGOK0" template="widget/static_block/default.phtml">
          <action method="setData">
             <argument name="name" xsi:type="string">block_id</argument>
             <argument name="value" xsi:type="string">1</argument>
@@ -777,7 +777,7 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1620104657;s:6:"expire";i:9999999999;s:4:"t
 </body>
 <body>
    <referenceContainer name="content">
-      <block class="Magento\Cms\Block\Widget\Block" name="dsl1Xyt0RqsxnjeAbY3nlBNKuAfrjthC" template="widget/static_block/default.phtml">
+      <block class="Magento\Cms\Block\Widget\Block" name="0XCdbVCYXqQDF62P2RZOM6BAjkMbS0TU" template="widget/static_block/default.phtml">
          <action method="setData">
             <argument name="name" xsi:type="string">block_id</argument>
             <argument name="value" xsi:type="string">14</argument>

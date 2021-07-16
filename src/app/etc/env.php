@@ -14,7 +14,10 @@ return [
                 'dbname' => 'magento2',
                 'username' => 'root',
                 'password' => 'root',
-                'active' => '1'
+                'active' => '1',
+                'model' => 'mysql4',
+                'engine' => 'innodb',
+                'initStatements' => 'SET NAMES utf8;'
             ]
         ]
     ],
@@ -56,6 +59,6 @@ return [
         'vertex' => 1
     ],
     'install' => [
-        'date' => 'Sat, 01 May 2021 15:00:45 +0000'
+        'date' => 'Fri, 16 Jul 2021 05:27:33 +0000'
     ]
 ];
