@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @var Mage2tv\Widget\Block\Main $block
+ */
+
+?>
+<div data-bind="scope: 'exampleUiComponentDisplayArea2'">
+
+    <!-- foreach: getRegion('groupB') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    <!-- /ko -->
+
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "exampleUiComponentDisplayArea2": {
+                        "component": "uiComponent",
+                        "children": {
+                            "child1": {
+                                "component": "uiComponent",
+                                "template": "Mage2tv_UI2/info",
+                                "displayArea": "groupB"
+                                },
+                            "child2": {
+                                "component": "uiComponent",
+                                "template": "Mage2tv_UI2/info",
+                                "displayArea": "groupB"
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+</script>

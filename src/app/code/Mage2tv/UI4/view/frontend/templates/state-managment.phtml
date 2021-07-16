@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @var Mage2tv\Widget\Block\Main $block
+ */
+
+?>
+<div data-bind="scope: 'mutator'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "mutator": {
+                        "component": "Mage2tv_UI4/js/value-mutator",
+                        "template": "Mage2tv_UI4/button",
+                        "children": {
+                            "display": {
+                                "component": "Mage2tv_UI4/js/value-display",
+                                "template": "Mage2tv_UI4/display"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>

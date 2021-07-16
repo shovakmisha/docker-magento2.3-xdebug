@@ -19,6 +19,18 @@
  *
  */
 module.exports = {
+    dram: {
+        area: 'frontend',
+        name: 'Pulsestorm/dram',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l',
+            'css/email',
+            'css/email-inline'
+        ],
+        dsl: 'less'
+    },
     blank: {
         area: 'frontend',
         name: 'Magento/blank',

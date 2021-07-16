@@ -1,0 +1,12 @@
+<page xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+        layout="more-empty">
+
+    <referenceContainer name="our_first_container">
+        <block
+            template="Pulsestorm_Nofrillslayout::blank/hello.phtml"
+            class="Magento\Framework\View\Element\Template"
+            name="pulsestorm_nofrillslayout_blank_hello"/>
+    </referenceContainer>
+
+</page>
+

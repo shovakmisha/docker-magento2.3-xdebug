@@ -1,0 +1,17 @@
+<referenceContainer name="top">
+    <block
+        class="Magento\Framework\View\Element\Template"
+        name="pulsestorm_nofrills_chapter2_hello_argument"
+        template="Pulsestorm_Nofrillslayout::chapter2/user/hello-argument.phtml">
+        <arguments>
+            <argument name="the_message" xsi:type="string">Hello World</argument>
+            <argument name="the_array" xsi:type="array">
+                <item name="key" xsi:type="string">value</item>
+                <item name="foo" xsi:type="string">var</item>
+            </argument>
+            <argument name="the_object" xsi:type="object">Pulsestorm\Nofrillslayout\Chapter2\Example</argument>
+        </arguments>
+
+    </block>
+
+</referenceContainer>
