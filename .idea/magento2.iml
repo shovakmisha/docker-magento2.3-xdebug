@@ -662,7 +662,21 @@
       <excludeFolder url="file://$MODULE_DIR$/src/dev/tests/static/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/src/update/vendor" />
       <excludeFolder url="file://$MODULE_DIR$/src/pub/static" />
-      <excludeFolder url="file://$MODULE_DIR$/src/var" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--0" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--1" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--3" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--4" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--5" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--6" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--7" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--8" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--9" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--a" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--b" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--c" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--d" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--e" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache/mage--f" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
