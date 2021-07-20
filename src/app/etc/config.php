@@ -232,6 +232,8 @@ return [
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
         'Magento_WishlistSampleData' => 1,
+        'Pronko_Authorizenet' => 1,
+        'Pronko_Checkout' => 1,
         'Pulsestorm_HelloWorldMVVM' => 1,
         'Pulsestorm_Logdropdown' => 1,
         'Pulsestorm_Nofrillslayout' => 1,
@@ -240,6 +242,7 @@ return [
         'Pulsestorm_TutorialObjectManager1' => 1,
         'Pulsestorm_TutorialObjectManagerArguments' => 1,
         'Pulsestorm_TutorialObjectPreference' => 1,
+        'Pulsestorm_TutorialVirtualType' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1
     ]
