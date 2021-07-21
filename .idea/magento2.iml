@@ -680,5 +680,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/knockout.validation" level="application" />
+    <orderEntry type="library" name="@types/knockout" level="application" />
+    <orderEntry type="library" name="@types/knockout.mapper" level="application" />
+    <orderEntry type="library" name="@types/knockout.viewmodel" level="application" />
   </component>
 </module>
