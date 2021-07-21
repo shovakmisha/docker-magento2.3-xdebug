@@ -7,8 +7,8 @@
             <argument name="code" xsi:type="string">pronko_authorizenet</argument>
             <argument name="formBlockType" xsi:type="string">Magento\Payment\Block\Form\Cc</argument>
             <argument name="infoBlockType" xsi:type="string">Magento\Payment\Block\Configurableinfo</argument>
-            <argument name="valueHandlerPool" xsi:type="string">PronkoAuthorizenetValueHandlerPool</argument>
-            <argument name="commandPool" xsi:type="string">PronkoAuthorizenetCommandPool</argument>
+            <argument name="valueHandlerPool" xsi:type="object">PronkoAuthorizenetValueHandlerPool</argument>
+            <argument name="commandPool" xsi:type="object">PronkoAuthorizenetCommandPool</argument>
         </arguments>
     </virtualType>
 
@@ -24,9 +24,16 @@
     <!-- Authorize.NET Value Handler Configuration -->
     <virtualType name="PronkoAuthorizenetConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
         <arguments>
-            <argument name="configInterface" xsi:type="object">Pronko\Authorizenet\Getway\Config\Config</argument>
+            <argument name="configInterface" xsi:type="object">Pronko\Authorizenet\Gateway\Config\Config</argument>
         </arguments>
     </virtualType>
+    <!-- Authorize.NET Gateway Config -->
+    <virtualType name="Pronko\Authorizenet\Gateway\Config\Config" type="Magento\Payment\Gateway\ConfigInterface">
+        <arguments>
+            <argument name="methodCode" xsi:type="string">pronko_authorizenet</argument>
+        </arguments>
+    </virtualType>
+
 
 
     <!-- Authorize.NET Command Pool Configuration -->
