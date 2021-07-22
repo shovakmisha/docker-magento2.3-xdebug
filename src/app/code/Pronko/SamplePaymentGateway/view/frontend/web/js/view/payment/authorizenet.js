@@ -17,7 +17,7 @@ define(
         rendererList.push(
             {
                 type: 'sample_gateway',
-                component: 'Pronko_SamplePaymentGateway/js/view/payment/method-renderer/sample_gateway'
+                component: 'Pronko_SamplePaymentGateway/js/view/payment/method-renderer/cc-form'
             }
         );
         /** Add view logic here if needed */
