@@ -1,52 +1,44 @@
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
-/*browser:true*/
-/*global define*/
-define(
-    [
-        'Magento_Checkout/js/view/payment/default'
-    ],
-    function (Component) {
-        'use strict';
+define([
+    'jquery',
+    'underscore',
+    'Magento_Payment/js/view/payment/cc-form'
+], function ($, _, Component) {
+    'use strict';
 
-        return Component.extend({
-            defaults: {
-                template: 'Pronko_SamplePaymentGateway/payment/form',
-                transactionResult: ''
-            },
+    return Component.extend({
+        defaults: {
+            template: 'Pronko_SamplePaymentGateway/payment/cc-form',
+            code: 'sample_gateway'
+        },
 
-            initObservable: function () {
+        getCode: function () {
+            return 'sample_gateway';
+        },
 
-                this._super()
-                    .observe([
-                        'transactionResult'
-                    ]);
-                return this;
-            },
+        isActive: function () {
+            return this.getCode() === this.isChecked();
+        },
 
-            getCode: function() {
-                return 'sample_gateway';
-            },
-
-            getData: function() {
+        /**
+         * Get list of available month values
+         * @returns {Object}
+         */
+        getCcMonthsValues: function () {
+            let x = this.getCcMonths();
+            return _.map(this.getCcMonths(), function (value, key) {
                 return {
-                    'method': this.item.method,
-                    'additional_data': {
-                        'transaction_result': this.transactionResult()
-                    }
+                    'value': key,
+                    'month': value
                 };
-            },
+            });
+        },
 
-            getTransactionResults: function() {
-                return _.map(window.checkoutConfig.payment.sample_gateway.transactionResults, function(value, key) {
-                    return {
-                        'value': key,
-                        'transaction_result': value
-                    }
-                });
-            }
-        });
-    }
-);
+        /**
+         * Get list of months
+         * @returns {Object}
+         */
+        getCcMonths: function () {
+            return window.checkoutConfig.payment.ccform.months['sample_gateway'];
+        },
+    });
+});
