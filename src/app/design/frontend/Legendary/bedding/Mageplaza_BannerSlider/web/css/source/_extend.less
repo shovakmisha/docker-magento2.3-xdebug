@@ -1,0 +1,30 @@
+& when (@media-common = true) {
+    #mageplaza-bannerslider-block-before-content-1 {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    body .mp-banner-slider .owl-nav button span {
+        top: 50%;
+        color: @color-white;
+        font-family: @font__oswald__light;
+        height: 50px;
+        line-height: 37px;
+        width: 50px;
+        background: rgba(0,0,0,50%);
+    }
+
+    body .mp-banner-slider .owl-nav .owl-prev span {
+        margin-left: -585px;
+        left: auto;
+    }
+
+    body .mp-banner-slider .owl-nav .owl-next span {
+        margin-left: 610px;
+        right: auto;
+    }
+}

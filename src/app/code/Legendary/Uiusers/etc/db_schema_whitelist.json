@@ -1,0 +1,19 @@
+{
+    "ui_users": {
+        "column": {
+            "user_id": true,
+            "name": true,
+            "address": true,
+            "image": true,
+            "publish_date": true,
+            "update_date": true
+        },
+        "index": {
+            "UI_USERS_USER_ID": true,
+            "UI_USERS_NAME_ADDRESS": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

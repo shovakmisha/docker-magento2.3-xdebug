@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @var \Legendary\Customer\Block\Account\AuthorizationLink $block
+ * @var \Magento\Framework\Escaper $escaper
+ */
+$dataPostParam = '';
+if ($block->isLoggedIn()) :
+    $dataPostParam = sprintf(" data-post='%s'", $block->getPostParams());
+else: ?>
+     <li class="create-account-link">
+        <a href='<?php echo $block->getCreateAccountUrl(); ?>'><?php echo __("Create account"); ?></a>
+     </li>";
+     <li class="wishlist-link">
+         <a href='<?php echo $block->getLoginUrl(); ?>'><?php echo __("Wishlist"); ?></a>
+     </li>"
+}
+<?php endif; ?>
+
+<li class="link authorization-link" data-label="<?= $escaper->escapeHtml(__('or')) ?>">
+    <a <?= /* @noEscape */ $block->getLinkAttributes() ?>
+        <?= /* @noEscape */ $dataPostParam ?>><?= $escaper->escapeHtml($block->getLabel()) ?></a>
+</li>

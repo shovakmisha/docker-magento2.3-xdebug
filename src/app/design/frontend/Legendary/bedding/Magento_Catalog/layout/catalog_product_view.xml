@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.details">
+            <block class="Magento\Catalog\Block\Product\View" name="custom.tab" as="custom_tab" template="product/view/custom_vkladka.phtml" group="detailed_info">
+                <arguments>
+                    <argument translate="true" name="title" xsi:type="string">Custom Tab</argument>
+                    <argument name="sort_order" xsi:type="string">30</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        <referenceContainer name="product.info.price">
+            <block name="legendary_bedding_catalog_product_view_social"
+                   class="Magento\Framework\View\Element\Template"
+                   template="Magento_Catalog::product/view/social-buttons.phtml"/>
+        </referenceContainer>
+
+        <move element="product.info.overview" destination="product.info.price" as="new_alias" after="legendary_bedding_catalog_product_view_social" />
+
+        <referenceBlock name="view.addto.compare" remove="true" />
+
+        <move element="view.addto.wishlist" destination="product.info.options.wrapper" />
+
+        <referenceContainer name="product.info.main">
+            <block name="legendary_bedding_catalog_product_view_social_group"
+                   class="Magento\Framework\View\Element\Template"
+                   template="Magento_Catalog::product/view/social-buttons-group.phtml"
+                   after="-"/>
+        </referenceContainer>
+
+        <move element="reviews.tab" destination="content" after="product.info.details" />
+
+        <move element="product.info.details" destination="product.info.main" after="legendary_bedding_catalog_product_view_social_group"/>
+
+    </body>
+</page>

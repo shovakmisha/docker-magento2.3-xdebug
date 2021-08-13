@@ -13,7 +13,7 @@
         <arguments>
             <argument name="code" xsi:type="string">sample_gateway</argument>
             <argument name="formBlockType" xsi:type="string">Magento\Payment\Block\Form\Cc</argument>
-            <argument name="infoBlockType" xsi:type="string">Magento\Payment\Block\Configurableinfo</argument>
+            <argument name="infoBlockType" xsi:type="string">Magento\Payment\Block\ConfigurableInfo</argument>
             <argument name="valueHandlerPool" xsi:type="object">SamplePaymentGatewayValueHandlerPool</argument>
             <argument name="commandPool" xsi:type="object">SamplePaymentGatewayCommandPool</argument>
         </arguments>
@@ -34,6 +34,7 @@
         </arguments>
     </virtualType>
 
+
     <!-- Configuration reader -->
     <virtualType name="SamplePaymentGatewayConfig" type="Magento\Payment\Gateway\Config\Config">
         <arguments>
@@ -42,20 +43,75 @@
     </virtualType>
 
 
-
-
-
-
-
     <!-- Authorize.NET Command Pool Configuration -->
     <virtualType name="SamplePaymentGatewayCommandPool" type="Magento\Payment\Gateway\Command\CommandPool">
         <arguments>
             <argument name="commands" xsi:type="array">
                 <item name="authorize" xsi:type="string">Magento\Payment\Gateway\Command\NullCommand</item>
-                <item name="capture" xsi:type="string">Magento\Payment\Gateway\Command\NullCommand</item>
+                <item name="capture" xsi:type="string">PronkoAuthorizenetChargeCommand</item>
             </argument>
         </arguments>
     </virtualType>
 
+
+
+
+
+    <!-- Authorize.NET Request Charge transaction Builder -->
+    <virtualType name="PronkoAuthorizenetChargeTransactionBuilder" type="Pronko\SamplePaymentGateway\Gateway\Request\RequestBuilder">
+        <arguments>
+            <argument name="builder" xsi:type="object">PronkoAuthorizenetChargeBuilderComposite</argument>
+        </arguments>
+    </virtualType>
+
+    <!-- Authorize.NET Request Charge transaction Builder Composite -->
+    <virtualType name="PronkoAuthorizenetChargeBuilderComposite" type="Magento\Payment\Gateway\Request\BuilderComposite">
+        <arguments>
+            <argument name="builders" xsi:type="array">
+                <item name="charge" xsi:type="string">Pronko\SamplePaymentGateway\Gateway\Request\Builder\Charge</item>
+                <item name="payment" xsi:type="string">Pronko\SamplePaymentGateway\Gateway\Request\Builder\Payment</item>
+                <item name="productItems" xsi:type="string">Pronko\SamplePaymentGateway\Gateway\Request\Builder\ProductItems</item>
+                <item name="totals" xsi:type="string">Pronko\SamplePaymentGateway\Gateway\Request\Builder\Totals</item>
+                <item name="address" xsi:type="string">Pronko\SamplePaymentGateway\Gateway\Request\Builder\Address</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="PronkoAuthorizenetChargeCommand" type="Magento\Payment\Gateway\Command\GatewayCommand">
+        <arguments>
+            <argument name="requestBuilder" xsi:type="object">PronkoAuthorizenetChargeTransactionBuilder</argument>
+            <argument name="transferFactory" xsi:type="object">Pronko\SamplePaymentGateway\Gateway\Http\TransferFactory</argument>
+            <argument name="client" xsi:type="object">Pronko\SamplePaymentGateway\Gateway\Http\Client</argument>
+        </arguments>
+    </virtualType>
+
+
+
+    <type name="Pronko\SamplePaymentGateway\Gateway\Http\Client">
+        <arguments>
+            <argument name="logger" xsi:type="object">PronkoAuthorizenetLogger</argument>
+            <argument name="converter" xsi:type="object">Pronko\SamplePaymentGateway\Gateway\Converter\JsonToArray</argument>
+        </arguments>
+    </type>
+
+    <virtualType name="PronkoAuthorizenetLogger" type="Magento\Payment\Model\Method\Logger">
+        <!--arguments>
+            <argument name="config" xsi:type="object">Pronko\SamplePaymentGateway\Gateway\Config\Config</argument>
+        </arguments-->
+    </virtualType>
+
+
+
+    <type name="Pronko\SamplePaymentGateway\Gateway\Converter\JsonToArray">
+        <arguments>
+            <argument name="serializer" xsi:type="object">Magento\Framework\Serialize\Serializer\Json</argument>
+        </arguments>
+    </type>
+
+    <type name="Pronko\SamplePaymentGateway\Gateway\Converter\Converter">
+        <arguments>
+            <argument name="converter" xsi:type="object">Pronko\SamplePaymentGateway\Gateway\Converter\ArrayToJson</argument>
+        </arguments>
+    </type>
 
 </config>

@@ -1,0 +1,50 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_width" xsi:type="number">225</argument>
+                <argument name="logo_height" xsi:type="number">55</argument>
+                <argument name="logo_alt" xsi:type="string">Legendary Bedding Shop</argument>
+            </arguments>
+        </referenceBlock>
+
+        <referenceContainer name="header.panel" label="Page Header Panel" htmlTag="div" htmlClass="panel header">
+            <block class="Magento\Framework\View\Element\Template" name="skip_to_content" template="Magento_Theme::html/skip.phtml">
+                <arguments>
+                    <argument name="target" xsi:type="string">contentarea</argument>
+                    <argument name="label" translate="true" xsi:type="string">Skip to Content</argument>
+                </arguments>
+            </block>
+
+            <block class="Magento\Framework\View\Element\Template"
+                   name="legendary_bedding_callus"
+                   template="Magento_Theme::/call-us.phtml" />
+
+            <block class="Magento\Store\Block\Switcher" name="store_language" as="store_language" template="Magento_Store::switch/languages.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Magento\Store\ViewModel\SwitcherUrlProvider</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Customer\Block\Account\Navigation" name="top.links">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">header links</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceContainer name="footer">
+
+            <referenceBlock name="footer_links" remove="true"/>
+
+            <block class="Magento\Framework\View\Element\Template"
+                   name="legendary_bedding_footer_links"
+                   template="Magento_Theme::footer-links.phtml" />
+
+            <block class="Magento\Framework\View\Element\Template"
+                   name="legendary_bedding_footer_cards"
+                   template="Magento_Theme::cards.phtml" />
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,52 @@
+
+@import "_footer-links";
+
+& when (@media-common = true) {
+
+    .call-us {
+        font-family: @font__oswald__light;
+        color: @legendary__black;
+        font-size: 20px;
+        margin-left: 250px;
+    }
+
+    .call-us__title {
+        text-transform: capitalize;
+    }
+
+    #html-body .header.links li a {
+        color: @color-gray40;
+    }
+
+    .create-account-link {
+        background: url("../images/customer.png") no-repeat;
+        padding-left: 20px;
+    }
+
+    .wishlist-link {
+        background: url("../images/heart.png") no-repeat 0 3px;
+        padding-left: 20px;
+    }
+
+    .authorization-link {
+        background: url("../images/lock.png") no-repeat;
+        padding-left: 20px;
+    }
+
+    .header.content .minicart-wrapper .action.showcart .text {
+        width: auto;
+        height: auto;
+        clip: auto;
+    }
+
+    body .modes-label {
+        float: left;
+        height: auto;
+        width: auto;
+        position: static;
+        margin-top: 7px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+}

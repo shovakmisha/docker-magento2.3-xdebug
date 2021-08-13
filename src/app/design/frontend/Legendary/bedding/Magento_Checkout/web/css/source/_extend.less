@@ -1,0 +1,20 @@
+
+& when (@media-common = true) {
+    .page-wrapper .page-header .header.content .text.minicart--total--text {
+        color: @color__legendary__black;
+        font-family: @font__oswald__light;
+        font-size: 15px;
+        margin-left: 25px;
+        vertical-align: bottom;
+        position: static;
+
+        &:after {
+            content: '';
+            position: absolute;
+            right: -15px;
+            bottom: 1px;
+            border: 5px solid transparent;
+            border-top: 5px solid #130d0d;
+        }
+    }
+}

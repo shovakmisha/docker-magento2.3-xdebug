@@ -28,7 +28,7 @@ if [[ "$UPDATE_UID_GID" = "true" ]]; then
 fi
 
 # Ensure our Magento directory exists
-mkdir -p $MAGENTO_ROOT
+mkdir -p -m 0777 $MAGENTO_ROOT
 chown www-data:www-data $MAGENTO_ROOT
 
 

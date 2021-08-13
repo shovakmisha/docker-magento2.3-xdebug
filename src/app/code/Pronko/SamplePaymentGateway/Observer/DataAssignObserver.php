@@ -44,4 +44,17 @@ class DataAssignObserver extends AbstractDataAssignObserver
             }
         }
     }
+
+    /**
+     * Set value after save payment from post data to use in case capture or authorize
+     * @param \Magento\Framework\DataObject $data
+     * @return $this
+     */
+    public function assignData(\Magento\Framework\DataObject $data)
+    {
+        parent::assignData($data);
+        $this->getInfoInstance()->setAdditionalInformation('post_data_value', $data->getData());
+
+        return $this;
+    }
 }
