@@ -31,6 +31,16 @@ module.exports = {
         ],
         dsl: 'less'
     },
+    bedding: {
+        area: 'frontend',
+        name: 'Legendary/bedding',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l'
+        ],
+        dsl: 'less'
+    },
     blank: {
         area: 'frontend',
         name: 'Magento/blank',
