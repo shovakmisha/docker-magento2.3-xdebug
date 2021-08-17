@@ -1,0 +1,23 @@
+& when (@media-common = true) {
+
+    .catalog-product-view {
+
+        .swatch-option.text {
+            display: none;
+        }
+        .swatch-select.color {
+            display: none;
+        }
+
+        .swatch-attribute-label {
+
+            &:after {
+                content: "*";
+                color: #dc3022;
+                position: absolute;
+
+            }
+        }
+    }
+
+}

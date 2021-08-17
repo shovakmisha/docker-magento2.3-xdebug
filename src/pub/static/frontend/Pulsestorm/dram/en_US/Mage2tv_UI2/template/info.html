@@ -1,0 +1,27 @@
+<table style="border: 1px solid">
+    <tr>
+        <th>namespace (nc)</th>
+        <td data-bind="text: ns"></td>
+    </tr>
+    <tr>
+        <th>index</th>
+        <td data-bind="text: index"></td>
+    </tr>
+    <tr>
+        <th>name</th>
+        <td data-bind="text: name"></td>
+    </tr>
+    <tr data-bind="if: elems().length">
+        <th>children</th>
+        <td>
+            <!--each args="elems">
+                <render />
+            </each-->
+
+            <!-- ko foreach: {data: elems, as: 'element'} -->
+            <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() --><!-- /ko --><!-- /ko -->
+            <!-- /ko -->
+
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,60 @@
+& when (@media-common = true) {
+
+    .subscribe-container {
+        background-color: @color__legendary__green;
+    }
+
+    .subscribe-container-content {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 20px 30px 20px;
+        box-sizing: border-box;
+    }
+
+    .newsletter--text {
+        font-family: @font__oswald__medium;
+        color: @color__legendary__black;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .block.newsletter {
+        margin: 5px 0 0 0;
+        float: left;
+    }
+
+    .block.newsletter .field .control:before {
+        display: none;
+        margin: 0;
+    }
+
+    .block.newsletter input {
+        padding-left: 10px;
+        margin: 0;
+        border: 2px solid @color__legendary__brown;
+        color: @color__legendary__brown;
+        font-size: 18px;
+        font-family: @font__oswald__light;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        &::placeholder {
+            color: @color__legendary__brown;
+            font-size: 18px;
+            font-family: @font__oswald__light;
+        }
+    }
+
+    .social-container {
+        float: right;
+        text-align: right;
+        margin-top: 37px;
+    }
+    .social-container--link {
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
