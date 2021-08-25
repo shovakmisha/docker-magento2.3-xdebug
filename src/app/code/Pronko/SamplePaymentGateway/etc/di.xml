@@ -54,9 +54,6 @@
     </virtualType>
 
 
-
-
-
     <!-- Authorize.NET Request Charge transaction Builder -->
     <virtualType name="PronkoAuthorizenetChargeTransactionBuilder" type="Pronko\SamplePaymentGateway\Gateway\Request\RequestBuilder">
         <arguments>
