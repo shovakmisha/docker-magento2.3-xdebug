@@ -11,7 +11,7 @@ return [
         'connection' => [
             'default' => [
                 'host' => 'database',
-                'dbname' => 'magento2',
+                'dbname' => 'magento23',
                 'username' => 'root',
                 'password' => 'root',
                 'active' => '1',
@@ -59,6 +59,6 @@ return [
         'vertex' => 1
     ],
     'install' => [
-        'date' => 'Fri, 16 Jul 2021 05:27:33 +0000'
+        'date' => 'Thu, 23 Sep 2021 01:45:25 +0000'
     ]
 ];
