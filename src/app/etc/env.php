@@ -11,7 +11,7 @@ return [
         'connection' => [
             'default' => [
                 'host' => 'database',
-                'dbname' => 'magento2',
+                'dbname' => 'magento23',
                 'username' => 'root',
                 'password' => 'root',
                 'active' => '1',
