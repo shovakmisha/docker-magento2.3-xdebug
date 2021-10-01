@@ -1,6 +1,6 @@
-./src/generated/*
-./src/pub/static/*
-./src/var/session/*
-./src/var/cache/*
-./src/var/view_preprocessed/*
-./src/generated/code/*
+/src/generated/
+/src/pub/static/
+/src/var/session/
+/src/var/cache/
+/src/var/view_preprocessed/
+/src/generated/code/
