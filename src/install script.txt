@@ -1,1 +1,0 @@
-bin/magento setup:install --base-url=http://m2.docker:88 --db-host=database --db-name=magento23 --db-user=root --db-password=root --admin-firstname=admin --admin-lastname=admin --admin-email=admin@admin.com --admin-user=admin --admin-password=magetn0 --language=en_US --currency=USD --timezone=America/Chicago
