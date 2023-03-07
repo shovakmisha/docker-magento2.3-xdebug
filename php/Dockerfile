@@ -39,7 +39,7 @@ RUN docker-php-ext-install \
   sockets
 
 # Install Xdebug (but don't enable)
-RUN pecl install -o -f xdebug
+RUN pecl install -o -f xdebug-3.1.4
 
 ENV PHP_ENABLE_XDEBUG true
 ENV MAGENTO_ROOT /var/www/html

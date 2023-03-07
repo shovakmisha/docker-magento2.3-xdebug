@@ -4,3 +4,4 @@
 /src/var/cache/
 /src/var/view_preprocessed/
 /src/node_modules/
+.idea/

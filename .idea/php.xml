@@ -5,6 +5,19 @@
       <MessDetectorConfiguration tool_path="$PROJECT_DIR$/src/vendor/bin/phpmd" />
     </phpmd_settings>
   </component>
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="codingStandard" value="PHPCompatibility" />
+    <option name="highlightLevel" value="WARNING" />
+    <option name="installedPaths" value="$PROJECT_DIR$/src/vendor/phpcompatibility/php-compatibility/PHPCompatibility" />
+    <option name="useInstalledPaths" value="true" />
+    <option name="transferred" value="true" />
+  </component>
   <component name="PhpCSFixer">
     <phpcsfixer_settings>
       <PhpCSFixerConfiguration tool_path="$PROJECT_DIR$/src/vendor/bin/php-cs-fixer" />
@@ -755,10 +768,15 @@
       <PhpStanConfiguration tool_path="$PROJECT_DIR$/src/vendor/bin/phpstan" />
     </PhpStan_settings>
   </component>
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
   <component name="PhpUnit">
     <phpunit_settings>
-      <phpunit_by_interpreter interpreter_id="7401e1dc-a694-414b-8098-4abd04816974" custom_loader_path="/var/www/html/vendor/autoload.php" phpunit_phar_path="" />
       <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/src/vendor/autoload.php" />
     </phpunit_settings>
+  </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
 </project>
