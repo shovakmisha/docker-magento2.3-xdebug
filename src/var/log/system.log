@@ -48,3 +48,6 @@ Class Magento\Framework\App\Config\Initial\Reader\Proxy generation error: The re
 [2021-10-01 13:27:50] main.INFO: Broken reference: the 'wishlist_sidebar' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
 [2021-10-01 13:27:50] main.INFO: Broken reference: the 'paypal.partner.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
 [2021-10-01 13:27:50] main.INFO: Broken reference: the 'bml.right.logo' element cannot be added as child to 'sidebar.additional', because the latter doesn't exist [] []
+[2023-03-07 15:46:10] main.ERROR: SQLSTATE[HY000] [1049] Unknown database 'magento23' [] []
+[2023-03-07 15:46:10] main.ERROR: SQLSTATE[HY000] [1049] Unknown database 'magento23' [] []
+[2023-03-07 15:48:49] main.ERROR: Error: Application is not installed yet.  [] []
