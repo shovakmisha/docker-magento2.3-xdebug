@@ -439,6 +439,11 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/amzn/amazon-pay-sdk-php" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/react/promise" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/facebook/webdriver" />
+      <excludeFolder url="file://$MODULE_DIR$/src/pub/static/adminhtml" />
+      <excludeFolder url="file://$MODULE_DIR$/src/pub/static/frontend" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/session" />
+      <excludeFolder url="file://$MODULE_DIR$/src/var/view_preprocessed" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
